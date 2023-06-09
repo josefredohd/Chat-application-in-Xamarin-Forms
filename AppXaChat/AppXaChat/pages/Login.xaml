@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             NavigationPage.HasNavigationBar="False" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppXaChat.pages.Login">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#1e1e1e">
+            <Grid BackgroundColor="#1e1e1e" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="300"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.35*"/>
+                    <RowDefinition Height="0.35*"/>
+                    <RowDefinition Height="0.35*"/>
+                    <RowDefinition Height="0.35*"/>
+                    <RowDefinition Height="0.35*"/>
+                    <RowDefinition Height="0.35*"/>
+                    <RowDefinition Height="0.35*"/>
+                </Grid.RowDefinitions>
+                <Label TextColor="AntiqueWhite" HorizontalTextAlignment="Center" Grid.Column="0" Grid.Row="0" FontAttributes="Bold" Text="Iniciar Sesión" FontSize="25" />
+                <Entry PlaceholderColor="Beige" TextColor="WhiteSmoke" Grid.Column="0" Grid.Row="1" x:Name="entrUsuario" Placeholder="Usuario..." />
+                <Entry PlaceholderColor="Beige" TextColor="WhiteSmoke" Grid.Column="0" Grid.Row="2" x:Name="entrContra" IsPassword="true" Placeholder="Contraseña..."/>
+
+                <Button Grid.Column="0" Grid.Row="4" BackgroundColor="AntiqueWhite" CornerRadius="20" x:Name="btnLogin" TextColor="Black" Text="Iniciar Sesión" FontAttributes="Bold" FontSize="16" Clicked="btnLogin_Clicked"/>
+                <Button Grid.Column="0" Grid.Row="5" BackgroundColor="AntiqueWhite" CornerRadius="20" x:Name="btnRegistro" TextColor="Black" Text="Registrarse" FontAttributes="Bold" FontSize="16" Clicked="btnRegistro_Clicked"/>
+                <Label x:Name="lbUpdate" Grid.Column="0" HorizontalTextAlignment="Center" FontSize="Body" Grid.Row="6" Text="¿Olvidó su contraseña?" TextColor="Blue"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

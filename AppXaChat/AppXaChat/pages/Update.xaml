@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             NavigationPage.HasNavigationBar="False"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppXaChat.pages.Update">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#1e1e1e">
+            <Grid HorizontalOptions="CenterAndExpand" BackgroundColor="#1e1e1e" VerticalOptions="CenterAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="300"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.35*"/>
+                    <RowDefinition Height="0.35*"/>
+                    <RowDefinition Height="0.35*"/>
+                    <RowDefinition Height="0.35*"/>
+                    <RowDefinition Height="0.35*"/>
+                    <RowDefinition Height="0.35*"/>
+                </Grid.RowDefinitions>
+                <Label TextColor="AntiqueWhite" HorizontalTextAlignment="Center" Grid.Column="0" Grid.Row="0" FontAttributes="Bold" Text="Actualizar contraseña" FontSize="25" />
+                <Entry PlaceholderColor="Beige" MaxLength="25" TextColor="WhiteSmoke" Grid.Column="0" Grid.Row="1" x:Name="entrUsuarioreg" Placeholder="Usuario..." />
+                <Entry PlaceholderColor="Beige" MaxLength="25" TextColor="WhiteSmoke" Grid.Column="0" Grid.Row="2" x:Name="entrContrareg" IsPassword="true" Placeholder="Contraseña nueva..."/>
+                <Entry PlaceholderColor="Beige" TextColor="WhiteSmoke" Grid.Column="0" Grid.Row="3" x:Name="entrConfirmContr" IsPassword="true" Placeholder="Confirmar contraseña..."/>
+                <Button Grid.Column="0" Grid.Row="4" BackgroundColor="AntiqueWhite" CornerRadius="20" x:Name="btnUpdate" TextColor="Black" Text="Actualizar" FontAttributes="Bold" FontSize="16" Clicked="btnUpdate_Clicked"/>
+                <Button Grid.Column="0" Grid.Row="5" BackgroundColor="AntiqueWhite" CornerRadius="20" x:Name="btnLogin" TextColor="Black" Text="Regresar" FontAttributes="Bold" FontSize="16" Clicked="btnLogin_Clicked"/>
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             NavigationPage.HasNavigationBar="False" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppXaChat.MainPage">
+
+
+    <StackLayout BackgroundColor="#1e1e1e">
+
+        <ListView x:Name="lvMsj" SeparatorVisibility="None" />
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.69*"/>
+                <ColumnDefinition Width="0.35*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Entry x:Name="entrMsj" Grid.Column="0" Grid.Row="0" TextColor="WhiteSmoke" PlaceholderColor="Beige" Placeholder="Mensaje..."/>
+            <Button x:Name="Prueba" Grid.Column="1" Grid.Row="0" BackgroundColor="AntiqueWhite" CornerRadius="20" TextColor="Black" Text="ENVIAR" Clicked="Prueba_Clicked"/>
+            <Button x:Name="btnSalir" Grid.Column="1" Grid.Row="1" TextColor="Black" BackgroundColor="AntiqueWhite" CornerRadius="20" Text="SALIR" Clicked="btnSalir_Clicked"/>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
